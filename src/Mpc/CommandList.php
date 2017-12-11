@@ -1,9 +1,20 @@
 <?php
 
+/**
+ * This file is part of the Weecast application
+ *
+ * (c) Daniel Schultheis <d.schultheis@kabel-salat.net>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Dachande\Weecast\Mpc;
 
 /**
- * Mpc CommandList object
+ * A command list or a chain of commands that can be send to a MPD server.
+ *
+ * @author Daniel Schultheis <d.schultheis@kabel-salat.net>
  */
 class CommandList
 {

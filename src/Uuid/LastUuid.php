@@ -1,11 +1,26 @@
 <?php
 
+/**
+ * This file is part of the Weecast application
+ *
+ * (c) Daniel Schultheis <d.schultheis@kabel-salat.net>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Dachande\Weecast\Uuid;
 
 use Cake\Core\Configure;
 use Cake\Filesystem\File;
 use Cake\Filesystem\Folder;
 
+/**
+ * The last-uuid file handler that interacts with a temporary file to store,
+ * retrieve and compare uuids.
+ *
+ * @author Daniel Schultheis <d.schultheis@kabel-salat.net>
+ */
 class LastUuid
 {
     public static function get()

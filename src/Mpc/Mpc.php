@@ -1,5 +1,14 @@
 <?php
 
+/**
+ * This file is part of the Weecast application
+ *
+ * (c) Daniel Schultheis <d.schultheis@kabel-salat.net>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Dachande\Weecast\Mpc;
 
 use Kraken\Loop\Loop;
@@ -8,7 +17,9 @@ use Kraken\Ipc\Socket\Socket;
 use Cake\Core\Configure;
 
 /**
- * Main Mpc class
+ * The main MPC class that can execute and send any possible command to a MPD server.
+ *
+ * @author Daniel Schultheis <d.schultheis@kabel-salat.net>
  */
 class Mpc
 {

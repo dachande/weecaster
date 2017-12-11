@@ -1,6 +1,15 @@
 <?php
 
 /**
+ * This file is part of the Weecast application
+ *
+ * (c) Daniel Schultheis <d.schultheis@kabel-salat.net>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+/**
  * Use the DS to separate the directories in other defines
  */
 if (!defined('DS')) {

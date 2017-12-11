@@ -1,5 +1,14 @@
 <?php
 
+/**
+ * This file is part of the Weecast application
+ *
+ * (c) Daniel Schultheis <d.schultheis@kabel-salat.net>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Dachande\Weecast\Console\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
@@ -13,6 +22,13 @@ use Illuminate\Console\OutputStyle;
 use Illuminate\Contracts\Support\Arrayable;
 use Symfony\Component\Console\Command\Command as SymfonyCommand;
 
+/**
+ * An extension of the default symfony console command class with most portions
+ * of the code borrowed from the console command class by
+ * Taylor Otwell <taylor@laravel.com> used in the Laravel framework.
+ *
+ * @author Daniel Schultheis <d.schultheis@kabel-salat.net>
+ */
 class Command extends SymfonyCommand
 {
     /**

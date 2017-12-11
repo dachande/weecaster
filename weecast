@@ -1,10 +1,13 @@
 #!/usr/bin/env php
 <?php
 
+// Include composer autoload and some
+// application bootstrapping configuration
 require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/config/bootstrap.php';
 
 use Dachande\Weecast\Application\Application;
 
+// Start application
 $application = new Application();
 $application->run();

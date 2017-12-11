@@ -1,5 +1,14 @@
 <?php
 
+/**
+ * This file is part of the Weecast application
+ *
+ * (c) Daniel Schultheis <d.schultheis@kabel-salat.net>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Dachande\Weecast\Console\Command;
 
 use Dachande\Weecast\Uuid\Uuid;
@@ -9,6 +18,11 @@ use Kraken\Loop\Loop;
 use Kraken\Loop\Model\SelectLoop;
 use Kraken\Ipc\Socket\Socket;
 
+/**
+ * This code describes the "play" console command.
+ *
+ * @author Daniel Schultheis <d.schultheis@kabel-salat.net>
+ */
 class PlayCommand extends Command
 {
     protected $signature = 'play
