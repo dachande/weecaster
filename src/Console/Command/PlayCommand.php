@@ -12,11 +12,7 @@
 namespace Dachande\Weecast\Console\Command;
 
 use Dachande\Weecast\Uuid\Uuid;
-use Dachande\Weecast\Uuid\LastUuid;
 use Dachande\Weecast\Mpc\Mpc;
-use Kraken\Loop\Loop;
-use Kraken\Loop\Model\SelectLoop;
-use Kraken\Ipc\Socket\Socket;
 
 /**
  * This code describes the "play" console command.
@@ -49,9 +45,5 @@ class PlayCommand extends Command
         Mpc::play();
 
         $this->output->success('Command executed.');
-
-        // $this->output->success('Play command triggered.');
-        // $response = Mpc::hasAdminAccess();
-        // print var_export($response, 1);
     }
 }
