@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * Configuration file for the weecast application
+ */
+
+return [
+    'App' => [
+        'uuidRegexp' => '/^[0-9a-f]{8}$/',
+        'tempFolder' => '/tmp/weecast',
+        'lastUuidFilename' => 'last_uuid',
+    ],
+
+    'Mpd' => [
+        'host' => '127.0.0.1',
+        'port' => 6600,
+        'authenticate' => true,
+        'password' => 't00niebox',
+    ],
+];

@@ -1,0 +1,21 @@
+{
+    "name": "dachande/weecast",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Daniel Schultheis",
+            "email": "d.schultheis@kabel-salat.net"
+        }
+    ],
+    "require": {
+        "cakephp/core": "^3.5",
+        "cakephp/filesystem": "^3.5",
+        "illuminate/console": "^5.5",
+        "dazzle-php/socket": "^0.4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dachande\\Weecast\\": "src/"
+        }
+    }
+}
