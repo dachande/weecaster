@@ -21,6 +21,12 @@ use Cake\Core\Configure;
  */
 class Application
 {
+    /**
+     * All available commands have to be registered here so they can be
+     * recognized by the application.
+     *
+     * @return array
+     */
     public function registerCommands()
     {
         return [
@@ -29,6 +35,11 @@ class Application
         ];
     }
 
+    /**
+     * Initialize and run the console application
+     *
+     * @return void
+     */
     public function run()
     {
         $consoleApplication = new ConsoleApplication(Configure::read('App.name'), Configure::read('App.version'));

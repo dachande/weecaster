@@ -29,7 +29,7 @@ use Symfony\Component\Console\Command\Command as SymfonyCommand;
  *
  * @author Daniel Schultheis <d.schultheis@kabel-salat.net>
  */
-class Command extends SymfonyCommand
+abstract class Command extends SymfonyCommand
 {
     /**
      * The input interface implementation.
@@ -197,6 +197,11 @@ class Command extends SymfonyCommand
     {
         return call_user_func([$this, 'handle']);
     }
+
+    /**
+     * The method that handles the console command execution.
+     */
+    abstract protected function handle();
 
     /**
      * Call another console command.

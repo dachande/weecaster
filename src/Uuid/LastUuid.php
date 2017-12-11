@@ -23,6 +23,11 @@ use Cake\Filesystem\Folder;
  */
 class LastUuid
 {
+    /**
+     * Get uuid from file.
+     *
+     * @return \Dachande\Weecast\Uuid\Uuid
+     */
     public static function get()
     {
         $lastUuidFoldername = Configure::read('App.tempFolder');
@@ -42,6 +47,11 @@ class LastUuid
         return new Uuid();
     }
 
+    /**
+     * Store uuid in file.
+     *
+     * @param \Dachande\Weecast\Uuid\Uuid $uuid
+     */
     public static function set(Uuid $uuid)
     {
         $lastUuidFoldername = Configure::read('App.tempFolder');
@@ -56,6 +66,13 @@ class LastUuid
         $lastUuidFile->write($uuid->get());
     }
 
+    /**
+     * Compare uuid stored in file with uuid from argument.
+     * Return true if uuids match.
+     *
+     * @param \Dachande\Weecast\Uuid\Uuid $uuid
+     * @return bool
+     */
     public static function compare(Uuid $uuid)
     {
         $lastUuid = static::get();

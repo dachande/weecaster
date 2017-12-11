@@ -59,6 +59,12 @@ class Mpc
         return $response[sizeof($response) - 1];
     }
 
+    /**
+     * Parses the response from the MPD server.
+     *
+     * @param  string $response
+     * @return string
+     */
     protected static function parseResponse($response)
     {
         $response = preg_split('/\n/', $response);
@@ -99,6 +105,11 @@ class Mpc
         return $keyedResponse;
     }
 
+    /**
+     * Checks if admin access on the MPD server is available.
+     *
+     * @return bool
+     */
     public static function hasAdminAccess()
     {
         $response = static::commands();
