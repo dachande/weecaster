@@ -25,4 +25,11 @@ return [
         'authenticate' => true,
         'password' => 't00niebox',
     ],
+
+    'Server' => [
+        'protocol' => 'http',
+        'hostname' => 'localhost',
+        'port' => '8765',
+        'timeout' => 5,
+    ],
 ];
