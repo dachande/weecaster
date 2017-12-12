@@ -11,7 +11,9 @@
         "cakephp/core": "^3.5",
         "cakephp/filesystem": "^3.5",
         "illuminate/console": "^5.5",
-        "dazzle-php/socket": "^0.4.1"
+        "dazzle-php/socket": "^0.4.1",
+        "guzzlehttp/guzzle": "^6.3",
+        "geerlingguy/ping": "^1.1"
     },
     "autoload": {
         "psr-4": {
