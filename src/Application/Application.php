@@ -27,7 +27,7 @@ class Application
      *
      * @return array
      */
-    public function registerCommands()
+    protected function registerCommands()
     {
         return [
             new \Dachande\Weecast\Console\Command\PlayCommand,
